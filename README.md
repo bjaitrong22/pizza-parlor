@@ -32,11 +32,17 @@ A fictional pizza parlor website that will allow users to order a pizza with one
 Describe: pizza-parlor
 Test: "It should create a pizza object with toppings and size property"
 Code: let myPizza = new Pizza(myToppings,"medium");
-Expected Output: > myPizza;
-< Pizza {toppings: ["pepperoni", "canadian bacon", "pineapple", "black olives"], pizzaSize: "medium"}
+Expected Output: myPizza;
+Pizza {toppings: ["pepperoni", "canadian bacon", "pineapple", "black olives"], pizzaSize: "medium"}
 
-  
-  
+Test: "It should calculate the cost of a medium pizza with 4 toppings to be $33."
+Code: myPizza.cost();
+Expected Output: 33
+
+Test: "The cost of a large pizza with 4 toppings should cost $38."
+Code:myPizza.cost();
+Expected Output: 38
+
 
 
 
