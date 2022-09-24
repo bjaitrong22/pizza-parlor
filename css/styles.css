@@ -1,0 +1,35 @@
+body {
+  font-family: 'Crimson Pro', serif;
+  font-size: 25px;
+  background-image:url("../img/pizza.jpg");
+  background-position:justify;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+#welcome {
+  font-size: 120px;
+  color: red;
+  font-weight:bolder;
+  text-align: left; 
+}
+
+#order {
+  font-size: 50px;
+  color: rgba(6, 247, 6, 0.818);
+  font-weight: bold;
+  text-align: center;
+}
+
+#pizzaOrder {
+  font-size: 25px;
+  color: rgba(6, 247, 6, 0.818);
+  font-weight: bold;
+  text-align: right;
+  display: block;
+}
+
+
+
+
+  

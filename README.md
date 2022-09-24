@@ -29,12 +29,13 @@ A fictional pizza parlor website that will allow users to order a pizza with one
 # License
  * Portfolio is licensed under the terms of GNU AFFERO GENERAL PUBLIC LICENS Version 3, 19 November 2007
 
-Describe: pizza-parlor
+Describe: Pizza()
 Test: "It should create a pizza object with toppings and size property"
 Code: let myPizza = new Pizza(myToppings,"medium");
 Expected Output: myPizza;
 Pizza {toppings: ["pepperoni", "canadian bacon", "pineapple", "black olives"], pizzaSize: "medium"}
 
+Describe: Pizza.prototype.cost()
 Test: "It should calculate the cost of a medium pizza with 4 toppings to be $33."
 Code: myPizza.cost();
 Expected Output: 33
@@ -43,7 +44,9 @@ Test: "The cost of a large pizza with 4 toppings should cost $38."
 Code:myPizza.cost();
 Expected Output: 38
 
-
+Test: "The cost of a small pizza with 4 toppings should cost $28."
+Code:myPizza.cost();
+Expected Output: 28
 
 
 

@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
   <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <title>Pizza Parlor</title>
 </head>
 <body>
-  <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
+  <div class="container">
+    <span id="welcome">Welcome to<br>Little Italy's Pizzaria</span>
+    <p id="order">Order our World Famous Pizza Here:</p>
+    <form id="pizzaOrder">
+      <div class="row">
+        <div class="col-6">
+          <legend>Select Your Pizza Size:</legend> 
+          <ul>
+            <li>
+              <label for="large">Large</label>
+              <input type="radio" id="large" name="size" value="large" checked>
+            </li>
+            <li>
+              <label for="medium">medium</label>
+              <input type="radio" id="medium" name="size" value="medium">
+            </li>
+            <li>
+              <label for="small">small</label>
+                <input type="radio" id="small" name="size" value="small">
+            </li>
+          </ul>
+        </div> 
+        <div class="col-6"> 
+          <legend>Select Your Pizza Toppings:</legend>
+            <label>
+              <input type="checkbox" name="toppings" value="pepperoni">
+              Pepperoni
+            </label><br>
+            <label>
+              <input type="checkbox" name="toppings" value="sausage">
+              Sausage
+            </label><br>
+            <label>
+              <input type="checkbox" name="toppings" value="canadian bacon">
+              canadian bacon
+            </label><br>
+            <label>
+              <input type="checkbox" name="toppings" value="mushrooms">
+              mushrooms
+            </label><br>
+            <label>
+              <input type="checkbox" name="toppings" value="onions">
+              onions
+            </label><br>
+            <label>
+              <input type="checkbox" name="toppings" value="peppers">
+              peppers
+            </label><br>
+            <label>
+              <input type="checkbox" name="toppings" value="extra cheese">
+              extra cheese
+            </label><br>
+        </div>
+      </div>
+        <button type="submit">Submit your order</button>
+    </form>
+  </div>
 </body>
 </html>
