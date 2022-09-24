@@ -22,19 +22,36 @@ Pizza.prototype.cost = function() {
 
 //User Interface Logic
 function displayCost(pizzaOrder) {
-
   const form = document.querySelector("form#pizzaOrder");
   form.remove();
 
-  pizzaOrder.toppings.forEach(function(e) {
-    const p = document.createElement("p");
-    p.append(e.value);
-    document.body.append(p);
-  });
+  const secondDiv = document.createElement("div");
+  const thirdDiv = document.createElement("div");
+  const fourthDiv = document.createElement("div");
+  
+  secondDiv.setAttribute("id","secondDiv");
+  secondDiv.setAttribute("class","row");
+  
+  thirdDiv.setAttribute("id", "thirdDiv");
+  thirdDiv.setAttribute("class", "col-6");
+  
+  fourthDiv.setAttribute("id","fourthDiv");
+  fourthDiv.setAttribute("class","col-6");
+  
+  document.querySelector("div").appendChild(secondDiv);
+  document.querySelector("div#secondDiv").appendChild(thirdDiv);
+  document.querySelector("div#secondDiv").appendChild(fourthDiv);
 
-  const p = document.createElement("p");
-  p.append(pizzaOrder.cost());
-  document.body.append(p);
+  pizzaOrder.toppings.forEach(function(e) {
+    const p1 = document.createElement("p");
+    p1.append(e.value);
+    document.querySelector("div#thirdDiv").append(p1);
+  });
+  
+  const p2 = document.createElement("p");
+  const costString = "your total is: $" + pizzaOrder.cost();
+  p2.append(costString);
+  document.querySelector("div#fourthDiv").append(p2);
 
 }
 
