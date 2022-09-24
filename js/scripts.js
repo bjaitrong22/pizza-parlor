@@ -25,6 +25,14 @@ function displayCost(pizzaOrder) {
   const form = document.querySelector("form#pizzaOrder");
   form.remove();
 
+  const br = document.createElement('br');
+
+  document.querySelector("span#welcome").innerText = "From Everyone here at Little Italy's Pizzeria,";
+  document.querySelector("span#welcome").append(br);
+  document.querySelector("span#welcome").append("Thank you!!");
+
+  document.querySelector("p#order").innerText = "Here is Your Order Confirmation: ";
+
   const secondDiv = document.createElement("div");
   const thirdDiv = document.createElement("div");
   const fourthDiv = document.createElement("div");
@@ -42,17 +50,21 @@ function displayCost(pizzaOrder) {
   document.querySelector("div#secondDiv").appendChild(thirdDiv);
   document.querySelector("div#secondDiv").appendChild(fourthDiv);
 
-  pizzaOrder.toppings.forEach(function(e) {
-    const p1 = document.createElement("p");
-    p1.append(e.value);
-    document.querySelector("div#thirdDiv").append(p1);
-  });
-  
   const p2 = document.createElement("p");
   const costString = "your total is: $" + pizzaOrder.cost();
   p2.append(costString);
-  document.querySelector("div#fourthDiv").append(p2);
+  document.querySelector("div#thirdDiv").append(p2);
 
+  const p0 = document.createElement("p");
+  p0String = "Pizza Size: " + pizzaOrder.pizzaSize + " and Toppings: ";
+  p0.append(p0String);
+  document.querySelector("div#fourthDiv").append(p0);
+
+  pizzaOrder.toppings.forEach(function(e) {
+    const p1 = document.createElement("p");
+    p1.append(e.value);
+    document.querySelector("div#fourthDiv").append(p1);
+  });
 }
 
 
