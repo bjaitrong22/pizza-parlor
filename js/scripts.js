@@ -1,3 +1,5 @@
+//Business Logic
+
 function Pizza(toppings,pizzaSize) {
   this.toppings = toppings;
   this.pizzaSize = pizzaSize;
@@ -17,3 +19,19 @@ Pizza.prototype.cost = function() {
 
   return cost;
 }
+
+//User Interface Logic
+
+function handleForm (event) {
+  event.preventDefault;
+  
+  const toppings = document.querySelectorAll("input[name=toppings]:checked");
+  const pizzaSize = document.querySelector("input[name='size']:checked").value;
+
+  const toppingsArray = Array.from(toppings);
+  
+}
+
+window.addEventListener("load", function() {
+  document.querySelector("form#pizzaOrder").addEventListener("submit", handleForm);
+});
