@@ -29,6 +29,23 @@ body {
   display: block;
 }
 
+#thirdDiv {
+  font-size: 35px;
+  color: rgba(6, 247, 6, 0.818);
+  font-weight: bold;
+  text-align: right;
+  display: block;
+}
+
+#fourthDiv {
+  font-size: 30px;
+  color: rgba(6, 247, 6, 0.818);
+  font-weight: bold;
+  text-align: right;
+  display: block;
+}
+
+
 
 
 
