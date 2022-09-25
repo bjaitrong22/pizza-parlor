@@ -76,12 +76,13 @@ function displayCost(pizzaOrder) {
   let orderPagebutton = document.createElement("input");
   orderPagebutton.setAttribute("type","reset");
   orderPagebutton.setAttribute("id","resetBtn");
-  orderPagebutton.setAttribute("value","orderPage");
+  orderPagebutton.setAttribute("value","order Page");
 
   document.querySelector("form#orderPage").append(orderPagebutton);
 
-
-
+  resetBtn.addEventListener("click", function() {
+    location.reload()
+  });
 }
 
 function handleForm(event) {
@@ -98,5 +99,4 @@ function handleForm(event) {
 
 window.addEventListener("load", function() {
   document.querySelector("form#pizzaOrder").addEventListener("submit", handleForm);
-
 });

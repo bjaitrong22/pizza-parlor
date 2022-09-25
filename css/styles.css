@@ -50,9 +50,9 @@ body {
 }
 
 #resetBtn {
-  /*background-color: rgb(242, 193, 128);*/
   background-color: papayawhip;
-  color: rgba(6, 247, 6, 0.818);
+  color: red;
+  font-weight: bold;
 
 }
 
