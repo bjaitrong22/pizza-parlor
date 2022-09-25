@@ -8,7 +8,7 @@ Pizza Parlor
   * JavaScript
   * Web APIs
 # Description
-A fictional pizza parlor website that will allow users to order a pizza with one or more toppings and pizza size options of small (6"), medium (12"), and large(18"). Once the user has submitted the order, it will create a pizza object with the selected toppings and pizza size along with the cost.
+A fictional pizza parlor website that will allow users to order a pizza with one or more toppings and pizza size options of small, medium, and large. Once the user has submitted the order, it will create a pizza object with the selected toppings and pizza size along with the cost.
 
 # Setup/Installation Requirements
   * Clone the repository to your desktop or a subdirectory in your desktop by typing **https://github.com/bjaitrong22/pizza-parlor.git**
