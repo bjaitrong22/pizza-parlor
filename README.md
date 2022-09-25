@@ -7,6 +7,9 @@ Pizza Parlor
   * Bootstrap
   * JavaScript
   * Web APIs
+# Image Source
+  * pexels.com
+  
 # Description
 A fictional pizza parlor website that will allow users to order a pizza with one or more toppings and pizza size options of small, medium, and large. Once the user has submitted the order, it will create a pizza object with the selected toppings and pizza size along with the cost.
 
