@@ -61,13 +61,26 @@ function displayCost(pizzaOrder) {
   const p0 = document.createElement("p");
   p0String = "A " + pizzaOrder.pizzaSize + " Pizza with: ";
   p0.append(p0String);
-  document.querySelector("div#fourthDiv").append(p0);
+  document.querySelector("div#fourthDiv").appendChild(p0);
 
   pizzaOrder.toppings.forEach(function(e) {
     const p1 = document.createElement("p");
     p1.append(e.value);
-    document.querySelector("div#fourthDiv").append(p1);
+    document.querySelector("div#fourthDiv").appendChild(p1);
   });
+
+  const form2 = document.createElement("form");
+  form2.setAttribute("id","orderPage");
+  document.querySelector("div#thirdDiv").append(form2);
+
+  let orderPagebutton = document.createElement("input");
+  orderPagebutton.setAttribute("type","reset");
+  orderPagebutton.setAttribute("id","resetBtn");
+  orderPagebutton.setAttribute("value","orderPage");
+
+  document.querySelector("form#orderPage").append(orderPagebutton);
+
+
 
 }
 
@@ -81,12 +94,9 @@ function handleForm(event) {
   let pizzaOrder = new Pizza(toppingsArray,pizzaSize);
   
   displayCost(pizzaOrder);
-
-  
 }
 
 window.addEventListener("load", function() {
   document.querySelector("form#pizzaOrder").addEventListener("submit", handleForm);
-
 
 });

@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 body {
   font-family: 'Crimson Pro', serif;
   font-size: 25px;
@@ -45,6 +49,12 @@ body {
   display: block;
 }
 
+#resetBtn {
+  /*background-color: rgb(242, 193, 128);*/
+  background-color: papayawhip;
+  color: rgba(6, 247, 6, 0.818);
+
+}
 
 
 
