@@ -69,6 +69,7 @@ function displayCost(pizzaOrder) {
     document.querySelector("div#fourthDiv").appendChild(p1);
   });
 
+  //adding a form element and reset button
   const form2 = document.createElement("form");
   form2.setAttribute("id","orderPage");
   document.querySelector("div#thirdDiv").append(form2);

@@ -25,7 +25,7 @@ A fictional pizza parlor website that will allow users to order a pizza with one
   * You can view your webpage at **my-github-username.github.io/repository-name**
 
 # Known Bugs
-  * XXXXXXXXXXXXXXXXXXXXXXXXXX
+  * No known bugs
 # License
  * Portfolio is licensed under the terms of GNU AFFERO GENERAL PUBLIC LICENS Version 3, 19 November 2007
 
